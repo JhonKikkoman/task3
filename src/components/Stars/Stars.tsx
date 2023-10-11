@@ -1,7 +1,7 @@
 import countModels from '../models'
 
 export default function Stars(props: countModels) {
-    const count: number | any  = props.count;
+    const count: number | any = props.count;
     const star = <ul className="card-body-stars u-clearfix">
         <li>
             <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
@@ -10,7 +10,7 @@ export default function Stars(props: countModels) {
             </svg>
         </li>
     </ul>
-    const stars: any[] = [];
+    const stars: React.JSX.Element[] = [];
     for (let i = 1; i <= count; i++) {
         stars.push(star);
     }
